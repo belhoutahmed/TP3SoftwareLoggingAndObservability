@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug">
+    <Appenders>
+        <File name="File" fileName="logs/user_activity.log">
+            <JsonLayout compact="true" eventEol="true" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>
